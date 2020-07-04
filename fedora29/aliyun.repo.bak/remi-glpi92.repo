@@ -1,9 +1,0 @@
-[remi-glpi92]
-name=Remi's RPM repository - GLPI 9.2 - Fedora $releasever - $basearch - aliyun
-baseurl=https://mirrors.aliyun.com/remi/fedora/$releasever/glpi92/$basearch/
-#mirrorlist=http://cdn.remirepo.net/fedora/$releasever/glpi92/$basearch/mirror
-enabled=0
-gpgcheck=1
-fastestmirror=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi-$releasever
-
