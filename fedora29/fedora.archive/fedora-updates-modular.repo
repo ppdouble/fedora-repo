@@ -1,0 +1,42 @@
+[updates-modular]
+name=Fedora Modular $releasever - $basearch - Updates - archive
+failovermethod=priority
+baseurl=https://archives.fedoraproject.org/pub/archive/fedora/linux/updates/$releasever/Modular/$basearch/
+#baseurl=https://mirrors.aliyun.com/fedora/updates/$releasever/Modular/$basearch/
+#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-modular-f$releasever&arch=$basearch
+enabled=1
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+priority=1
+skip_if_unavailable=False
+
+[updates-modular-debuginfo]
+name=Fedora Modular $releasever - $basearch - Updates - Debug - archive
+failovermethod=priority
+baseurl=https://archives.fedoraproject.org/pub/archive/fedora/linux/updates/$releasever/Modular/$basearch/debug/
+#baseurl=https://mirrors.aliyun.com/fedora/updates/$releasever/Modular/$basearch/debug/
+#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-modular-debug-f$releasever&arch=$basearch
+enabled=0
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[updates-modular-source]
+name=Fedora Modular $releasever - Updates Source - archive
+failovermethod=priority
+baseurl=https://archives.fedoraproject.org/pub/archive/fedora/linux/updates/$releasever/Modular/SRPMS/
+#baseurl=https://mirrors.aliyun.com/fedora/updates/$releasever/Modular/SRPMS/
+#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-modular-source-f$releasever&arch=$basearch
+enabled=0
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False

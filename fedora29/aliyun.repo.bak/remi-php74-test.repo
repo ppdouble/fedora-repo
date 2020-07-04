@@ -1,0 +1,17 @@
+[remi-php74-test]
+name=Remi's RPM repository - Testing - PHP 7.4 - Fedora $releasever - $basearch - aliyun
+baseurl=https://mirrors.aliyun.com/remi/fedora/$releasever/test74/$basearch/
+#mirrorlist=http://cdn.remirepo.net/fedora/$releasever/test74/$basearch/mirror
+# WARNING: If you enable this repository, you must also enable "remi" and "remi-php74"
+enabled=0
+gpgcheck=1
+fastestmirror=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi-$releasever
+
+[remi-php74-test-debuginfo]
+name=Remi's PHP 7.4 test RPM repository for Fedora $releasever - $basearch - debuginfo - aliyun
+baseurl=https://mirrors.aliyun.com/remi/fedora/$releasever/debug-test74/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi-$releasever
+

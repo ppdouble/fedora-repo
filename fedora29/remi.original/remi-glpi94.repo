@@ -1,0 +1,9 @@
+[remi-glpi94]
+name=Remi's RPM repository - GLPI 9.4 - Fedora $releasever - $basearch
+#baseurl=http://rpms.remirepo.net/fedora/$releasever/glpi94/$basearch/
+mirrorlist=http://cdn.remirepo.net/fedora/$releasever/glpi94/$basearch/mirror
+enabled=0
+gpgcheck=1
+fastestmirror=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi-$releasever
+
